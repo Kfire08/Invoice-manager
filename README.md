@@ -18,22 +18,22 @@ b. Back-end Development:\
   i. Eclipse\
   ii. Apache Tomcat 8.5\
   iii. MySQL Server\
-  iv. SQLYog Community Edition\
+  iv. SQLYog Community Edition
   
 Technology Stacks Being Used:\
 a. Front-end Development: HTML, CSS and JavaScript\
 b. Back-end Development: Java\
 c. Database: MYSQL\
-d. Design Architecture : Adobe XD (*Provided readily)\
+d. Design Architecture : Adobe XD (*Provided readily)
 
 UNDERSTANDING THE REQUIREMENT:\
-a. Understanding the layout design:\
+a. Understanding the layout design:
 
 The Whole layout of the UI has been divided into Header, Grid Panel, and Modal
 Sections which are described on the next points. Have a look and feel about the
-UI and keep a structure of how to approach to build the UI in a structured fashion.\
+UI and keep a structure of how to approach to build the UI in a structured fashion.
 
-b. Understanding the Header Section:\
+b. Understanding the Header Section:
 
 1. Customer Logo: This is the logo of the customer for which we will be
 building the invoices screen. This logo has already been provided in the
@@ -44,7 +44,7 @@ be building the invoices screen.
 center of the header. You can download the logo from the experience
 design (XD) prototype, place it in your assets folder and then use it.
 
-c. Understanding the Grid Panel Section:\
+c. Understanding the Grid Panel Section:
 
 1. Grid Header: This is the header of the grid and its name should be given as
 Invoice List as mentioned in the PRS document.
@@ -71,33 +71,33 @@ checkbox component, please check the checkbox component from the
 recommended list and remember to use checked and unchecked
 components for the same from the assets where:\
 A. Checked Component : svg from assets of XD or Icons\
-B. Unchecked Component : svg from assets of XD or Icons\
+B. Unchecked Component : svg from assets of XD or Icons
 
-d. Understanding the Modal View:\
+d. Understanding the Modal View:
 
 i. There are 3 different modal views in our application. Those are:\
 ● Add Modal\
 ● Edit Modal\
 ● Delete Modal\
 ii. These views can be created using Dialog .\
-iii. Add Modal :\
+iii. Add Modal :
 
 ● Modal Header: This contains the title of the modal and a clickable close icon.
 The title of the modal should be Add Invoice. In order to create the close icon
 we recommend you directly download the svg from the experience design
 (xd) prototype.\
-● Modal Body : This contains the form with required fields in order to add data.\
+● Modal Body : This contains the form with required fields in order to add data.
 
 i. Each input has a proper label.\
 ii. Each label should append a red asterisk for invalid input.\
 iii. For creating the input fields we recommend using, Input
 type="text".\
-iv. Due date takes a date picker. Explore Input type="date".\
+iv. Due date takes a date picker. Explore Input type="date".
 
 ● Modal Footer : This contains the saving options for the added record. The
 modal has 3 buttons namely: Cancel , Clear, & Add. Use the same Button for
 creating these buttons.\
-iv. Edit Modal :\
+iv. Edit Modal :
 
 ● Modal Header: This contains the title of the modal and a
 clickable close icon. The title of the modal should be Edit Invoice.
@@ -107,13 +107,13 @@ download the svg from the XD prototype or Icons.\
 to edit data.\
 i. Each input has a proper label.\
 ii. For creating the input fields we recommend using,
-Input Type="text"\
+Input Type="text"
 
 ● Modal Footer : This contains the saving options for the edited
 record. The modal has 3 buttons namely: Cancel , Reset, & Save.
-Use the same Button for creating these buttons.\
+Use the same Button for creating these buttons.
 
-v. Delete Modal:\
+v. Delete Modal:
 
 ● Modal Header: This contains the title of the modal and a clickable close
 icon. The title of the modal should be Delete record(s)? . In order to
@@ -123,7 +123,7 @@ from the experience design (xd) prototype or Icons.\
 delete” highlighted in red.\
 ● Modal Footer : This contains the saving options for the to be deleted
 document. The modal has 2 buttons namely: Cancel & Delete. Use the
-same Button for creating these buttons.\
+same Button for creating these buttons.
 
 3. Exploring the Error Handling Scenarios:
 ● Handling errors and edge cases are the most important key factors of a good
@@ -132,13 +132,13 @@ application.\
 ● For these reasons we handle the error and edge cases with retry messages,
 snackbars or error messages while the UI works as is.\
 ● Example:\
-○ Snackbars:\
+○ Snackbars:
 
 ■ Snackbars help users in notifying users with the status of their
 actions.\
 ■ Whether it is an error case, success case or any warning
 message, snackbars are widely used these days. To implement
-this feature we recommend using Snackbar\
+this feature we recommend using Snackbar
 
 ○ Valid Error Messages :
 
