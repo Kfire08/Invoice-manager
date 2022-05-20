@@ -12,12 +12,12 @@ It is a Receivables Dashboard used to,\
 ● Modify data in the editable fields of the grid.
 
 Softwares Stacks used For Development:\
-a. Front-end Development:\
-  1. VS-CODE\
-b. Back-end Development:\
-  1. Eclipse\
-  2. Apache Tomcat 8.5\
-  3. MySQL Server\
+a. Front-end Development:
+  1. VS-CODE
+b. Back-end Development:
+  1. Eclipse
+  2. Apache Tomcat 8.5
+  3. MySQL Server
   4. SQLYog Community Edition
   
 Technology Stacks Being Used:\
