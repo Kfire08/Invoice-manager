@@ -11,9 +11,10 @@ It is a Receivables Dashboard used to,\
 ● Perform Searching operations on the invoices.\
 ● Modify data in the editable fields of the grid.
 
-Softwares Stacks used For Development:\
+Softwares Stacks used For Development:
 a. Front-end Development:
   1. VS-CODE
+
 b. Back-end Development:
   1. Eclipse
   2. Apache Tomcat 8.5
