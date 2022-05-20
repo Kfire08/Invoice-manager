@@ -57,7 +57,7 @@ div tag along with styling for this purpose.
 ● Grid Panel Section Header Menu: The header menu of the grid will have an
 Add Button, an Edit Button, a Delete Button and a Search Bar ( Optional )\
 ● Invoices Table : This is the table with customer invoice data as rows and the
-following columns:\
+following columns:
 1. Checkbox
 2. Customer Name
 3. Customer Number (Customer #)
@@ -107,7 +107,7 @@ clickable close icon. The title of the modal should be Edit Invoice.
 In order to create the close icon we recommend you directly
 download the svg from the XD prototype or Icons.\
 ● Modal Body : This contains the form with required fields in order
-to edit data.\
+to edit data.
 1. Each input has a proper label.
 2. For creating the input fields we recommend using,
 Input Type="text"
