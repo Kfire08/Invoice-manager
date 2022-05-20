@@ -3,8 +3,8 @@
 ![Screenshot (523)](https://user-images.githubusercontent.com/43553695/169533324-c82d61cf-5faf-45d5-9343-22b7a89130f3.png)
 ![Screenshot (524)](https://user-images.githubusercontent.com/43553695/169533327-936b1274-3103-43f6-bb75-77f5d96d5465.png)
 
-# It is a full stack Invoice Management Application using Java, JDBC,
-HTML, CSS, JSP/Servlets and JavaScript.
+# It is a full stack Invoice Management Application using 
+Java, JDBC, HTML, CSS, JSP/Servlets and JavaScript.
 
 It is a Receivables Dashboard used to,
 ● Visualize Data in the form of a table.
