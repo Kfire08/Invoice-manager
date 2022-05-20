@@ -13,12 +13,12 @@ It is a Receivables Dashboard used to,\
 
 Softwares Stacks used For Development:\
 a. Front-end Development:\
-  i. VS-CODE\
+  1. VS-CODE\
 b. Back-end Development:\
-  i. Eclipse\
-  ii. Apache Tomcat 8.5\
-  iii. MySQL Server\
-  iv. SQLYog Community Edition
+  1. Eclipse\
+  2. Apache Tomcat 8.5\
+  3. MySQL Server\
+  4. SQLYog Community Edition
   
 Technology Stacks Being Used:\
 a. Front-end Development: HTML, CSS and JavaScript\
@@ -88,15 +88,16 @@ we recommend you directly download the svg from the experience design
 (xd) prototype.\
 ● Modal Body : This contains the form with required fields in order to add data.
 
-i. Each input has a proper label.\
-ii. Each label should append a red asterisk for invalid input.\
-iii. For creating the input fields we recommend using, Input
+1. Each input has a proper label.\
+2. Each label should append a red asterisk for invalid input.\
+3. For creating the input fields we recommend using, Input
 type="text".\
-iv. Due date takes a date picker. Explore Input type="date".
+4. Due date takes a date picker. Explore Input type="date".
 
 ● Modal Footer : This contains the saving options for the added record. The
 modal has 3 buttons namely: Cancel , Clear, & Add. Use the same Button for
-creating these buttons.\
+creating these buttons.
+
 iv. Edit Modal :
 
 ● Modal Header: This contains the title of the modal and a
@@ -105,8 +106,8 @@ In order to create the close icon we recommend you directly
 download the svg from the XD prototype or Icons.\
 ● Modal Body : This contains the form with required fields in order
 to edit data.\
-i. Each input has a proper label.\
-ii. For creating the input fields we recommend using,
+1. Each input has a proper label.\
+2. For creating the input fields we recommend using,
 Input Type="text"
 
 ● Modal Footer : This contains the saving options for the edited
