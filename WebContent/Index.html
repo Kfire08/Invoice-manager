@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css" media="screen">
+</head>
+<!-- script -->
+<script defer src="script.js"></script>
+<!-- script -->
+<body>
+
+	<!-- -----------------------------------------------------------Delete modal --------------------------------------------------->
+	<div class="modal" id="delete-modal">
+		<div class="modal-header">
+			<div class="title">Delete records(s)</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<div class="delete-msg">
+				<p>You'll lose your record(s) after this action. We can't recover them once you delete.</p><br />
+				<p>Are you sure you want to <span>permanently delete</span> them?</p>
+			</div>
+			<div class="delete-msg">
+
+			</div>
+
+
+
+			<div class="model-bottom">
+				<span class="buttonright">
+					<button data-close-button class="reset">Cancel</button>
+					<button data-close-button class="save-and-delete" onclick="deletefun()">Delete</button>
+				</span>
+			</div>
+		</div>
+
+	</div>
+	<div id="deleteoverlay"></div>
+
+	<!-- ----------------------------------------------------End of Delete Model----------------------------------------------->
+
+
+
+	<!-- ----------------------------------------------------modal Add button ----------------------------------------------->
+	<div class="modal" id="add-modal">
+		<div class="modal-header">
+			<div class="title">Add Invoice</div>
+			<button onclick="addclear()" data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+
+				<!-- ------------------------------left box------------------------------- -->
+					<div class="left-box">
+						<div class="inner-box">
+							<div class="label-div">
+								<label>Customer Name <span>*</span></label>
+							</div>
+							<div class="input-div">
+								<input type="text" id="cust_name">
+							</div>
+						</div>
+						<div class="inner-box">
+							<div class="label-div">
+								<label>Customer No. <span>*</span></label>
+							</div>
+							<div class="input-div">
+								<input type="text" id="cust_num">
+							</div>
+						</div>
+						<div class="inner-box">
+							<div class="label-div">
+								<label>Invoice No. <span>*</span></label>
+							</div>
+							<div class="input-div">
+								<input type="text" id="invoice_no">
+							</div>
+						</div>
+						<div class="inner-box">
+							<div class="label-div">
+								<label>Invoice Amount <span>*</span></label>
+							</div>
+							<div class="input-div">
+								<input type="text" id="amount">
+							</div>
+						</div>
+					</div>
+				<!-- ------------------------------end left box------------------------------- -->
+<!-- ------------------------------------------------right box----------------------------- -->
+				<div class="right-box">
+					<div class="inner-box">
+						<div class="label-div">
+							<label>Due Date <span>*</span></label>
+						</div>
+						<div class="input-div">
+							<input type="date" id="due_date">
+						</div>
+					</div>
+					<div class="inner-box">
+						<div class="label-div">
+							<label>Notes :</label>
+						</div>
+						<div class="input-div">
+							<textarea id="notes"  style="height:200px"></textarea>
+						</div>
+					</div>
+
+				</div>
+
+
+<!-- ---------------------------------------------------------end of right box--------------- -->
+				<div class="model-bottom">
+					<span class="buttonleft">
+						<button onclick="addclear()" data-close-button class="cancel">Cancel</button>
+					</span>
+					<span class="buttonright">
+						<button onclick="addclear()" class="reset">Clear</button>
+						<button data-close-button class="add-modal" onclick="addfun()">Add</button>
+					</span>
+				</div>
+		</div>
+
+	</div>
+	<div id="addoverlay"></div>
+
+
+
+	<!-- -----------------------------------------------------------end of Add modal --------------------------------------------------->
+
+
+	<!-- ----------------------------------------------------modal edit button ----------------------------------------------->
+
+  <div class="modal" id="edit-modal">
+    <div class="modal-header">
+      <div class="title">Edit Invoice</div>
+      <button onclick="reset()" data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+          <div class="label-div">
+            <label>Invoice Amount</label>
+          </div>
+          <div class="input-div">
+            <input type="text" class="field-text" id="invoiceAmount"  >
+          </div>
+        </div>
+        <div class="row">
+          <div class="label-div">
+            <label>Notes</label>
+          </div>
+          <div class="input-div">
+            <textarea id="editnotes" name="subject"  style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="model-bottom">
+          <span class="buttonleft">
+            <button onclick = "reset()" data-close-button class="cancel">Cancel</button>
+          </span>
+          <span class="buttonright">
+            <button onclick = "reset()" class="reset">Reset</button>
+            <button data-close-button onclick="editfun()" class="save-and-delete">Save</button>
+          </span>
+        </div>
+    </div>
+
+  </div>
+  <div id="overlay"></div>
+
+	<!-- -----------------------------------------------------------end of edit modal --------------------------------------------------->
+	
+	
+	<!-- -----------------------------------------------------------empty search modal--------------------------------------------------->
+	  <div class="modal" id="search-modal">
+		<div class="modal-body">
+			<div class="search-msg">
+				<img class="errorimg" alt="error" src="images\error_outline24px.svg">
+				<p>                       No results found</p><br />
+				<p>Try adjusting your search to find what you are looking for.</p>
+				<button data-close-button class="clear-search" onclick="load_curr_data()">Clear Search</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- -----------------------------------------------------------end of empty search modal--------------------------------------------------->
+
+
+
+<!-- ----------------------------------------------------------------------Home page------------------------------------------------------------ -->
+
+	<header>
+		<img class = "nameing" src="images\Group 20399.svg" alt="logo">
+		<img class = "logo" src= "images\logo@2x.png" alt="logo">
+	</header>
+	<div class="grid-container">
+		<div class="iname">Invoice List</div>
+	<main>
+
+		<button id = "prev" class="prev" onclick="prevFunction()"> &lt; </button>
+		<button class="next" onclick="nextFunction()"> &gt; </button>
+
+		<div class="grid-header">
+			<div class="searchbar floatright">
+			<input id="searchbar" class="search floatright" type="search" placeholder="Search by Invoice Number" onchange="reloadData()"></input>
+			<button class="search-button" onclick="searchfun()"><i class="fas fa-search fa-lg"></i></button>
+			</div>
+			<button id = "delete" data-modal-target="#delete-modal" class="delete floatright" disabled><i class="fas fa-minus fa-sm"></i> Delete</button>
+			<button id = "edit" data-modal-target="#edit-modal"  onclick="editvalue()" class="edit floatright" disabled><i class="fas fa-pen fa-sm"></i> Edit</button>
+			<button  id = "add" data-modal-target="#add-modal"  class="add floatright"><i class="fas fa-plus fa-sm"></i> Add</button>
+		</div>
+		<div class="data_table">
+			<table class="customers" id="invoice_table"></table>
+		</div>
+	</main>
+	</div>
+</body>
+</html>

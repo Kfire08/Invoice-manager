@@ -1,0 +1,564 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+
+*, *::after, *::before {
+box-sizing: border-box;
+}
+
+
+html{
+    font-size: calc(0.75vh+0.75vw);
+}
+
+body{
+	top: 0px;
+left: 0px;
+height: 100vh;
+width: 100vw;
+background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+overflow: hidden;
+}
+header{
+    margin-top: 15px;
+    height: 49.5px;
+    max-height: 52px;
+    padding-left: 22px;
+}
+
+.add{
+    width: 99px;
+    height: 45px;
+    margin-right: 25px;
+    font: normal normal normal 20px/24px Arial;
+    border: 1px solid #14AFF1;
+    border-radius: 10px;
+    opacity: 1;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.edit{
+    width: 102px;
+    height: 45px;
+    font: normal normal normal 20px/24px Arial;
+    margin-right: 25px;
+    border: 1px solid ;
+    border-radius: 10px;
+    opacity: 1;
+    background: transparent;
+    cursor: pointer;
+    color: #97A1A9;
+}
+
+.delete{
+    width: 123px;
+    height: 45px;
+    font: normal normal normal 20px/24px Arial;
+    margin-right: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    opacity: 1;
+    background: transparent;
+    cursor: pointer;
+    color: #97A1A9;
+}
+
+.floatright{
+    float: right;
+}
+
+.floatleft{
+    float: left;
+}
+
+.search{
+    width: 340px;
+    height: 45px;
+    padding-left: 15px;
+    font: normal normal normal 18px/21px Roboto;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    color: #97A1A9;
+}
+
+.searchbar{
+    width: 340px;
+    height: 45px;
+    padding-left: 15px;
+    font: normal normal normal 18px/21px Roboto;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: #97A1A9;
+}
+
+.search-button{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 16px;
+    border-width:0;
+    opacity: 1;
+    color:#97A1A9;
+    background: transparent;
+    cursor: pointer;
+}
+.iname{
+    grid-area: header;
+    margin-top: 32px;
+margin-left: 47px;
+width: 141px;
+height: 28px;
+text-align: left;
+font: normal normal normal 28px/32px Arial;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+
+.logo {
+    margin-left: 21.563vw;
+    width: 235px;
+    height: 50px;
+}
+
+.nameimg {
+    width: 44px;
+    height: 46px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main';
+    grid-gap: 10px;
+    background-color: transparent
+  }
+
+main{
+    position: relative;
+    grid-area: main;
+    margin-left: 22px;
+    margin-top: 20px;
+    width: 97.3vw;
+    height: 78vh;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.next{
+    position:absolute;
+    margin-left: 96.8%;
+    margin-top: 20%;
+    margin-bottom: 80%;
+    z-index: 10;
+    background: #14AFF1 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000069;
+    opacity: 1;
+    font-size: 2.3rem;
+    color: white;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-width: 0px;
+    border-radius: 50%;
+}
+
+.prev{
+    position: absolute;
+    margin-top: 20%;
+    margin-bottom: 80%;
+    z-index: 10;
+    box-shadow: 0px 2px 6px #00000069;
+    opacity: 1;
+    font-size: 2.3rem;
+    color: white;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-width: 0px;
+    border-radius: 50%;
+}
+
+.data_table{
+    overflow-y: auto;
+    scrollbar-width: none;
+    align-content: center;
+    height: 55vh;
+    padding-left: 45px;
+    padding-right: 20px;
+    margin-top: 32px;
+}
+
+.grid-header{
+    margin-top: 32px;
+margin-right: 32px;
+height: 50px;
+text-align: right;
+font: normal normal normal 28px/32px Arial;
+letter-spacing: 0px;
+color: transparent;
+}
+.check{
+    border: 2px solid #97A1A9;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+/* table css */
+
+.customers {
+    font: normal normal normal 20px/24px Arial;
+    color: #FFFFFF;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .customers td, .customers th {
+    height: 50px;
+  }
+
+  .customers tr:nth-child(odd){background: #283A46 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    height: 50px;
+    opacity: 1;
+}
+
+  .customers th {
+    position: sticky;
+    top: 0;
+    font: normal normal normal 18px/21px Arial;
+    background-color:#283A46;
+    height: 50px;
+    text-align: center;
+    color: #97A1A9;
+  }
+
+  /* modal css  common property */
+	.modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0);
+		transition: 200ms ease-in-out;
+		background: #2A3E4C 0% 0% no-repeat padding-box;
+		box-shadow: 0px 8px 24px #00000029;
+		color:white;
+		border-radius: 6px;
+		z-index: 1;
+
+	}
+
+	.modal.active {
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	.modal-header {
+		background: #2A3E4C 0% 0% no-repeat padding-box;
+		padding: 20px;
+		border-bottom: 1px solid black;
+		border-radius: 10px 10px 0px 0px;
+		opacity: 1;
+	}
+
+	.modal-header .title {
+		display: inline-block;
+		text-align: left;
+		font: normal normal normal 28px Arial;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+
+		opacity: 1;
+	}
+
+	.modal-header .close-button {
+		float: right;
+		cursor: pointer;
+		border: none;
+		outline: none;
+		background: none;
+		font-size: 1.25rem;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+
+
+	.modal-body {
+		padding: 20px 0px;
+	}
+
+	.model-bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid black;
+		width: 100%;
+	}
+
+
+
+
+
+/* model model buttom button common property */
+.model-bottom button{
+    margin: 20px 15px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+/*----------------------------------- button in all 3 modals ------------------------------------------------------ */
+
+.cancel{
+  font: normal normal normal 20px/24px Arial;
+  letter-spacing: 0px;
+  color: #14AFF1;
+  opacity: 1;
+  border:none;
+  background: #2A3E4C 0% 0% no-repeat padding-box;
+}
+.reset{
+  background: #283A46 0% 0% no-repeat padding-box;
+  color:#FFFFFF;
+  border: 1px solid #14AFF1;
+  border-radius: 10px;
+  opacity: 1;
+}
+.save-and-delete{
+  background: #14AFF1 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+}
+.add-modal{
+  background: #14AFF1 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* ---------------------------------------- Edit Button Model ------------------------------------------------------------------ */
+
+#overlay {
+	position: fixed;
+	opacity: 0;
+	transition: 200ms ease-in-out;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	pointer-events: none;
+}
+
+#overlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+#edit-modal{
+	width: 550px;
+	height: 430px;
+}
+
+#edit-modal input[type=text], #edit-modal textarea {
+	width: 100%;
+	padding: 12px;
+	outline: none;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+	resize: vertical;
+	color: #FFFFFF;
+}
+
+#edit-modal label {
+	padding: 12px 0px 12px 0;
+	display: inline-block;
+	text-align: left;
+	font: normal normal normal 20px/24px Arial;
+	letter-spacing: 0.19px;
+	color: #97A1A9;
+	opacity: 1;
+}
+
+ #edit-modal .label-div {
+	float: left;
+	width: 28%;
+	margin-top: 6px;
+}
+
+#edit-modal .input-div {
+	float: left;
+	width: 70%;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.close-button{
+color: #FFFFFF;
+background: transparent url('images\baseline-close-24px.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.row{
+padding-left:15px;
+padding-right:15px;
+}
+/* to clear float property after each row end */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -----------------------------------------add Button Modal -------------------------------------------------------------------- */
+#add-modal{
+	width: 1109px;
+	height: 509px;
+}
+
+#addoverlay {
+	position: fixed;
+	opacity: 0;
+	transition: 200ms ease-in-out;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	pointer-events: none;
+}
+
+#addoverlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+#add-modal .label-div {
+	float: left;
+	width: 28%;
+	margin-top: 6px;
+	color: #97A1A9;
+}
+
+#add-modal .input-div {
+	float: left;
+	width: 70%;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+
+#add-modal span{
+color: #FF5E5E;
+}
+
+#add-modal input[type=text],#add-modal input[type=date], #add-modal textarea {
+	width: 70%;
+	padding: 12px;
+	outline: none;
+	color: #FFFFFF;
+	background: #283A46 0% 0% no-repeat padding-box;
+	border: 1px solid #356680;
+	border-radius: 10px;
+	opacity: 1;
+	resize: vertical;
+}
+.left-box{
+  float: left;
+  width: 49%;
+  padding:20px;
+
+}
+
+.inner-box{
+  margin-bottom: 20px;
+}
+
+.right-box{
+    float: right;
+    width: 49%;
+    padding:20px;
+}
+
+/* to clear folat property after each row end */
+.inner-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -----------------------------------------Delete Button Modal -------------------------------------------------------------------- */
+
+#delete-modal{
+	width: 450px;
+	height: 342px;
+}
+
+
+#deleteoverlay {
+	position: fixed;
+	opacity: 0;
+	transition: 200ms ease-in-out;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	pointer-events: none;
+}
+
+#deleteoverlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+
+.delete-msg{
+padding:20px;
+text-align: left;
+letter-spacing: 0px;
+opacity: 1;
+color: #97A1A9;
+}
+
+#delete-modal span{
+color: #FF5E5E;
+}
+
+#delete-modal .model-bottom .buttonright{
+margin-left:200px;
+}
+/*-------------------------------------------------------------search modal----------------------------------------------------*/
+
+#search-modal{
+	width: 450px;
+	height: 242px;
+}
+
+.search-msg{
+margin-top:10px;
+padding:20px;
+font:Arial;
+text-align: center;
+letter-spacing: 0px;
+opacity: 1;
+color: #97A1A9;
+}
+
+.clear-search{
+  margin-top:30px;
+  font: normal normal normal 20px/24px Arial;
+  letter-spacing: 0px;
+  color: #14AFF1;
+  opacity: 1;
+  border:none;
+  background: #2A3E4C 0% 0% no-repeat padding-box;
+  cursor:pointer;
+}
