@@ -90,10 +90,10 @@ we recommend you directly download the svg from the experience design
 (xd) prototype.\
 ● Modal Body : This contains the form with required fields in order to add data.
 
-1. Each input has a proper label.\
-2. Each label should append a red asterisk for invalid input.\
+1. Each input has a proper label.
+2. Each label should append a red asterisk for invalid input.
 3. For creating the input fields we recommend using, Input
-type="text".\
+type="text".
 4. Due date takes a date picker. Explore Input type="date".
 
 ● Modal Footer : This contains the saving options for the added record. The
@@ -108,7 +108,7 @@ In order to create the close icon we recommend you directly
 download the svg from the XD prototype or Icons.\
 ● Modal Body : This contains the form with required fields in order
 to edit data.\
-1. Each input has a proper label.\
+1. Each input has a proper label.
 2. For creating the input fields we recommend using,
 Input Type="text"
 
