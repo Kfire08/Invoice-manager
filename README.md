@@ -7,26 +7,26 @@
 Java, JDBC, HTML, CSS, JSP/Servlets and JavaScript.
 
 It is a Receivables Dashboard used to,\
-● Visualize Data in the form of a table.
-● Perform Searching operations on the invoices.
+● Visualize Data in the form of a table.\
+● Perform Searching operations on the invoices.\
 ● Modify data in the editable fields of the grid.
 
 Softwares Stacks used For Development:
-a. Front-end Development:
+a. Front-end Development:\
   i. VS-CODE
-b. Back-end Development:
+b. Back-end Development:\
   i. Eclipse
   ii. Apache Tomcat 8.5
   iii. MySQL Server
   iv. SQLYog Community Edition
   
-Technology Stacks Being Used:
-a. Front-end Development: HTML, CSS and JavaScript
-b. Back-end Development: Java
-c. Database: MYSQL
-d. Design Architecture : Adobe XD (*Provided readily)
+Technology Stacks Being Used:\
+a. Front-end Development: HTML, CSS and JavaScript\
+b. Back-end Development: Java\
+c. Database: MYSQL\
+d. Design Architecture : Adobe XD (*Provided readily)\
 
-UNDERSTANDING THE REQUIREMENT:
+UNDERSTANDING THE REQUIREMENT:\
 a. Understanding the layout design:
 
 The Whole layout of the UI has been divided into Header, Grid Panel, and Modal
@@ -44,7 +44,7 @@ be building the invoices screen.
 center of the header. You can download the logo from the experience
 design (XD) prototype, place it in your assets folder and then use it.
 
-c. Understanding the Grid Panel Section:
+c. Understanding the Grid Panel Section:\
 
 1. Grid Header: This is the header of the grid and its name should be given as
 Invoice List as mentioned in the PRS document.
@@ -53,9 +53,9 @@ Creating the exact background effect can be difficult. We recommend using a
 div tag along with styling for this purpose.
 
 ● Grid Panel Section Header Menu: The header menu of the grid will have an
-Add Button, an Edit Button, a Delete Button and a Search Bar ( Optional )
+Add Button, an Edit Button, a Delete Button and a Search Bar ( Optional )\
 ● Invoices Table : This is the table with customer invoice data as rows and the
-following columns:
+following columns:\
 1. Checkbox
 2. Customer Name
 3. Customer Number (Customer #)
@@ -69,24 +69,24 @@ following columns:
 and you should paginate the table in order to show the datas. Each row has a
 checkbox component, please check the checkbox component from the
 recommended list and remember to use checked and unchecked
-components for the same from the assets where:
-A. Checked Component : svg from assets of XD or Icons
-B. Unchecked Component : svg from assets of XD or Icons
+components for the same from the assets where:\
+A. Checked Component : svg from assets of XD or Icons\
+B. Unchecked Component : svg from assets of XD or Icons\
 
-d. Understanding the Modal View:
+d. Understanding the Modal View:\
 
-i. There are 3 different modal views in our application. Those are:
-● Add Modal
-● Edit Modal
-● Delete Modal
+i. There are 3 different modal views in our application. Those are:\
+● Add Modal\
+● Edit Modal\
+● Delete Modal\
 ii. These views can be created using Dialog .
 iii. Add Modal :
 
 ● Modal Header: This contains the title of the modal and a clickable close icon.
 The title of the modal should be Add Invoice. In order to create the close icon
 we recommend you directly download the svg from the experience design
-(xd) prototype.
-● Modal Body : This contains the form with required fields in order to add data.
+(xd) prototype.\
+● Modal Body : This contains the form with required fields in order to add data.\
 
 i. Each input has a proper label.
 ii. Each label should append a red asterisk for invalid input.
@@ -96,52 +96,52 @@ iv. Due date takes a date picker. Explore Input type="date".
 
 ● Modal Footer : This contains the saving options for the added record. The
 modal has 3 buttons namely: Cancel , Clear, & Add. Use the same Button for
-creating these buttons.
+creating these buttons.\
 iv. Edit Modal :
 
 ● Modal Header: This contains the title of the modal and a
 clickable close icon. The title of the modal should be Edit Invoice.
 In order to create the close icon we recommend you directly
-download the svg from the XD prototype or Icons.
+download the svg from the XD prototype or Icons.\
 ● Modal Body : This contains the form with required fields in order
-to edit data.
+to edit data.\
 i. Each input has a proper label.
 ii. For creating the input fields we recommend using,
 Input Type="text"
 
 ● Modal Footer : This contains the saving options for the edited
 record. The modal has 3 buttons namely: Cancel , Reset, & Save.
-Use the same Button for creating these buttons.
+Use the same Button for creating these buttons.\
 
 v. Delete Modal:
 
 ● Modal Header: This contains the title of the modal and a clickable close
 icon. The title of the modal should be Delete record(s)? . In order to
 create the close icon we recommend you can directly download the svg
-from the experience design (xd) prototype or Icons.
+from the experience design (xd) prototype or Icons.\
 ● Modal Body : This contains the delete warning text with “permanently
-delete” highlighted in red.
+delete” highlighted in red.\
 ● Modal Footer : This contains the saving options for the to be deleted
 document. The modal has 2 buttons namely: Cancel & Delete. Use the
-same Button for creating these buttons.
+same Button for creating these buttons.\
 
 3. Exploring the Error Handling Scenarios:
 ● Handling errors and edge cases are the most important key factors of a good
-application.
-● Users don’t like to see broken UI for development errors.
+application.\
+● Users don’t like to see broken UI for development errors.\
 ● For these reasons we handle the error and edge cases with retry messages,
-snackbars or error messages while the UI works as is.
-● Example:
-○ Snackbars:
+snackbars or error messages while the UI works as is.\
+● Example:\
+○ Snackbars:\
 
 ■ Snackbars help users in notifying users with the status of their
-actions.
+actions.\
 ■ Whether it is an error case, success case or any warning
 message, snackbars are widely used these days. To implement
-this feature we recommend using Snackbar
+this feature we recommend using Snackbar\
 
 ○ Valid Error Messages :
 
 ■ Whether there is an API failure, or data unavailability, we always notify
-the users using a proper error message.
+the users using a proper error message.\
 ( You can create these messages in any way you want)
