@@ -6,7 +6,7 @@
 # It is a full stack Invoice Management Application using 
 Java, JDBC, HTML, CSS, JSP/Servlets and JavaScript.
 
-It is a Receivables Dashboard used to,/
+It is a Receivables Dashboard used to,\
 ● Visualize Data in the form of a table.
 ● Perform Searching operations on the invoices.
 ● Modify data in the editable fields of the grid.
