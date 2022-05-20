@@ -12,6 +12,7 @@ It is a Receivables Dashboard used to,\
 ● Modify data in the editable fields of the grid.
 
 Softwares Stacks used For Development:
+
 a. Front-end Development:
   1. VS-CODE
 
