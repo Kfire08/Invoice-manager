@@ -13,12 +13,12 @@ It is a Receivables Dashboard used to,\
 
 Softwares Stacks used For Development:
 a. Front-end Development:\
-  i. VS-CODE
+  i. VS-CODE\
 b. Back-end Development:\
-  i. Eclipse
-  ii. Apache Tomcat 8.5
-  iii. MySQL Server
-  iv. SQLYog Community Edition
+  i. Eclipse\
+  ii. Apache Tomcat 8.5\
+  iii. MySQL Server\
+  iv. SQLYog Community Edition\
   
 Technology Stacks Being Used:\
 a. Front-end Development: HTML, CSS and JavaScript\
@@ -27,13 +27,13 @@ c. Database: MYSQL\
 d. Design Architecture : Adobe XD (*Provided readily)\
 
 UNDERSTANDING THE REQUIREMENT:\
-a. Understanding the layout design:
+a. Understanding the layout design:\
 
 The Whole layout of the UI has been divided into Header, Grid Panel, and Modal
 Sections which are described on the next points. Have a look and feel about the
-UI and keep a structure of how to approach to build the UI in a structured fashion.
+UI and keep a structure of how to approach to build the UI in a structured fashion.\
 
-b. Understanding the Header Section:
+b. Understanding the Header Section:\
 
 1. Customer Logo: This is the logo of the customer for which we will be
 building the invoices screen. This logo has already been provided in the
@@ -79,8 +79,8 @@ i. There are 3 different modal views in our application. Those are:\
 ● Add Modal\
 ● Edit Modal\
 ● Delete Modal\
-ii. These views can be created using Dialog .
-iii. Add Modal :
+ii. These views can be created using Dialog .\
+iii. Add Modal :\
 
 ● Modal Header: This contains the title of the modal and a clickable close icon.
 The title of the modal should be Add Invoice. In order to create the close icon
@@ -88,16 +88,16 @@ we recommend you directly download the svg from the experience design
 (xd) prototype.\
 ● Modal Body : This contains the form with required fields in order to add data.\
 
-i. Each input has a proper label.
-ii. Each label should append a red asterisk for invalid input.
+i. Each input has a proper label.\
+ii. Each label should append a red asterisk for invalid input.\
 iii. For creating the input fields we recommend using, Input
-type="text".
-iv. Due date takes a date picker. Explore Input type="date".
+type="text".\
+iv. Due date takes a date picker. Explore Input type="date".\
 
 ● Modal Footer : This contains the saving options for the added record. The
 modal has 3 buttons namely: Cancel , Clear, & Add. Use the same Button for
 creating these buttons.\
-iv. Edit Modal :
+iv. Edit Modal :\
 
 ● Modal Header: This contains the title of the modal and a
 clickable close icon. The title of the modal should be Edit Invoice.
@@ -105,15 +105,15 @@ In order to create the close icon we recommend you directly
 download the svg from the XD prototype or Icons.\
 ● Modal Body : This contains the form with required fields in order
 to edit data.\
-i. Each input has a proper label.
+i. Each input has a proper label.\
 ii. For creating the input fields we recommend using,
-Input Type="text"
+Input Type="text"\
 
 ● Modal Footer : This contains the saving options for the edited
 record. The modal has 3 buttons namely: Cancel , Reset, & Save.
 Use the same Button for creating these buttons.\
 
-v. Delete Modal:
+v. Delete Modal:\
 
 ● Modal Header: This contains the title of the modal and a clickable close
 icon. The title of the modal should be Delete record(s)? . In order to
