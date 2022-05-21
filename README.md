@@ -1,4 +1,5 @@
-# Screenshots
+# Invoice Manager
+## Screenshots
 ![Screenshot (521)](https://user-images.githubusercontent.com/43553695/169533315-2cbb1cd4-8a7a-40ad-88de-2c9fd3bda97a.png)
 ![Screenshot (523)](https://user-images.githubusercontent.com/43553695/169533324-c82d61cf-5faf-45d5-9343-22b7a89130f3.png)
 ![Screenshot (524)](https://user-images.githubusercontent.com/43553695/169533327-936b1274-3103-43f6-bb75-77f5d96d5465.png)
